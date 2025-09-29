@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(room.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.navbar span{
+    margin-left: 100px;
+    margin-top: 13px;
+    text-transform: uppercase;
+    color: chocolate;
+    font-size: 37px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.menu{
+    margin: 0 55px;
+    
+    
+ }
+
+ .navbar a{
+    color: yellowgreen;
+    font-size: 18px;
+    margin-left: 12px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative; 
+ }
+ .navbar a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#009688;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s ;
+ }
+ .navbar a:hover::after{
+    width: 100%;
+ }
+ .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: yellow;
+ }
+ .content h1{
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 120px;
+ }
+ .content p{
+    font-weight: 200;
+    color: #c7c74a;
+    font-size: 23px;
+ }
+ button{
+    cursor: pointer;
+    color: yellow;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 10px 15px;
+    margin: 40px 18px;
+    border: 2px solid rgb(9, 61, 82);
+    border-radius: 25px;
+    background: transparent;
+    width:200px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+ }
+ .span{
+    width: 0;
+    height: 100%;
+    background: #47d5ee;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    z-index: -1;
+    transition: 0.3s ease-in;
+ }
+ button:hover .span{
+    width: 100%;
+ }
+ 
+button:hover{
+    border: none;
+}
